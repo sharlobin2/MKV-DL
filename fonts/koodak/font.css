@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'BKoodakBold';
+  src: url('BKoodakBold.woff') format('woff'),
+       url('BKoodakBold.ttf') format('truetype'),
+       url('BKoodakBold.svg#BKoodakBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bkoodak';
+  src: url('Bkoodak.eot');
+  src: url('Bkoodak.woff2') format('woff2'),
+       url('Bkoodak.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+

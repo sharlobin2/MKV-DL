@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="fa-IR">
+
+<head>
+    <title>MKV-DL</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <!--body 990-->
+    <div class="body990">
+        <!--header-->
+        <header>
+
+            <div id="logo">
+                <img src="../img/logo.png" alt="MKV-DL | بهترین سایت دانلود فیلم و سریال خارجی با لینک مستقیم" width: 139px height: 160px>
+            </div>
+            <div class="text-up-header">
+                <div id="text_up">
+                    <p>لذت بخش ترین لحظاتتان را با ما تجربه کنید </p>
+                </div>
+                <div id="eynak_rast"></div>
+                <div id="eynak_chap"></div>
+            </div>
+            <div id="color_box">
+                <div id="blue" onclick="b()"></div>
+                <div id="red" onclick="r()"></div>
+                <div id="green" onclick="g()"></div>
+                <div id="gray" onclick="gr()"></div>
+                <div id="yellow" onclick="y()"></div>
+
+                <div id="none" onclick="n()"><span>×</span></div>
+            </div>
+            <!--menu bala-->
+            <div id="main">
+
+                <ul>
+                    <li class="title-main"><a href="../index.html">صفحه اصلی</a></li>
+                    <li class="title-main"> <a href="#">فیلم</a>
+                        <ul>
+                            <li> <a href="../page/action.html">سال 2017</a></li>
+                            <li><a href="../page/drama.html">سال 2016</a></li>
+                            <li> <a href="../page/animation.html">سال 2015</a></li>
+                            <li> <a href="../page/exciting.htm">250 فیلم برتر تاریخ</a></li>
+                        </ul>
+                    </li>
+                    <li class="title-main"><a href="#">سریال</a>
+                        <ul>
+                            <li> <a href="../page/animation.html">هالیوودی</a></li>
+                            <li> <a href="../page/exciting.htm">بالیوودی</a></li>
+                            <li> <a href="../exciting.htm">ایرانی</a></li>
+                            <li> <a href="../page/action.html">کره ای</a></li>
+                        </ul>
+                    </li>
+                    <li class="title-main"><a href="#" class="request-us" onclick="re()">درخواستی ها</a>
+                        <div id="request_us" class="modal">
+
+                            <form class="modal-content" action="../action_page.php" method="POST">
+                                <div class="imgcontainer">
+                                    <span class="close" onclick="ci()" title="Close Modal">&times;</span>
+
+                                </div>
+
+                                <div class="container">
+                                    <label><b>لینک IMDB </b></label>
+                                    <input type="text" placeholder="آدرس لینک فیلم یا سریال مورد نظر را وارد کیند" name="linkmovie" required>
+
+                                    <label><b>اسم فیلم</b></label>
+                                    <input type="text" placeholder="نام فیلم یا سریال را وارد کنید" name="namemovie" required>
+                                    <label><b>سال انتشار</b></label>
+                                    <input type="text" placeholder="سال انتشار فیلم را وارد کنید" name="yearmovie" required>
+                                    <p>کیفیت</p>
+                                    <select>
+                                        <option value="Blu-ray"> Blu-ray </option>
+                                        <option value="HD-TV"> HD-TV </option>
+                                        <option value="WEB-dl"> WEB-dl </option>
+                                        <option value="DVD-rip"> DVD-rip </option>
+                                        <option value="FHD"> FHD </option>
+                                        <option value="HD"> HD </option>
+                                    </select>
+                                    <br>
+                                    <button type="submit">ارسال</button>
+                                </div>
+                            </form>
+                        </div>
+                    </li>
+
+                    <li class="title-main"><a href="../page/contact-us.html">تماس با ما</a></li>
+                    <!--login form-->
+                    <li class="title-main"><a href="#" class="sign-in" onclick="si()">ورود</a>
+
+
+                        <div id="sign_in" class="modal">
+
+                            <form class="modal-content" action="../action_page.php" method="POST">
+                                <div class="imgcontainer">
+                                    <span class="close" onclick="ci()" title="Close Modal">&times;</span>
+
+                                </div>
+
+                                <div class="container">
+                                    <label><b>نام کاربری</b></label>
+                                    <input type="text" placeholder="نام کاربری خود را وارد کنید" name="uname" required>
+
+                                    <label><b>رمز عبور</b></label>
+                                    <input type="password" placeholder="رمز عبور خود را وارد کنید" name="psw" required>
+
+                                    <button type="submit">ورود</button>
+                                    <a href="#" class="psw">رمز خود را فراموش کرده اید ؟</a>
+                                    <div class="container">
+
+                                        <input type="checkbox" checked="checked">
+                                        <p id="remember">مرا به خاطر بسپار</p>
+                                    </div>
+                                </div>
+
+
+                            </form>
+                        </div>
+                        <!--forget password-->
+
+                        <div id="forget_psw" class="modal">
+
+                            <form class="modal-content" action="../action_page.php" method="POST">
+                                <div class="imgcontainer">
+                                    <span class="close" onclick="c()" title="Close Modal">&times;</span>
+
+                                </div>
+
+                                <div class="container">
+                                    <label><b>آدرس پست الکترونیکی</b></label>
+                                    <input type="email" placeholder="آدرس پست الکترونیکی خود را وارد کنید" name="email" required>
+                                    <button type="submit">ارسال</button>
+                                </div>
+                            </form>
+                        </div>
+                        <!--end forget password-->
+                    </li>
+                    <!--end login form-->
+                    <li class="title-main"><a href="#" class="sign-up" onclick="su()">عضویت</a>
+                        <div id="sign_up" class="modal">
+
+                            <form class="modal-content" action="../action_page.php" method="POST">
+                                <div class="imgcontainer">
+                                    <span class="close" onclick="cu()" title="Close Modal">&times;</span>
+
+                                </div>
+
+                                <div class="container">
+                                    <label><b>نام کاربری</b></label>
+                                    <input type="text" placeholder="نام کاربری خود را وارد کنید" name="uname" required>
+
+                                    <label><b>رمز عبور</b></label>
+                                    <input type="password" placeholder="رمز عبور خود را وارد کنید" name="psw" required>
+                                    <label><b>آدرس پست الکترونیکی</b></label>
+                                    <input type="email" placeholder="آدرس پست الکترونیکی خود را وارد کنید" name="email" required>
+                                    <label><b>نام</b></label>
+                                    <input type="text" placeholder="نام خود را وارد کنید " neme="fname">
+                                    <label><b>نام خانوادگی</b></label>
+                                    <input type="text" placeholder="نام خانوادگی خود را وارد کنید " neme="lname">
+                                    <label><b>شماره تماس (اختیاری)</b></label>
+                                    <input type="tel" placeholder="شماره موبایل خود را وارد کنید" name="tel">
+
+                                    <button type="submit">عضویت</button>
+                                    <button type="reset">پاک کردن</button>
+
+
+                                </div>
+
+
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+            <!--menu bala-->
+        </header>
+        <!--end header-->
+        <!--navar zard rang search-->
+        <div class="search">
+            <span id="aw-c" onclick="fn1()">×</span>
+            <span id="aw-o" onclick="fn2()" style="background-color:rgba(29, 152, 201, 0.86) ; display: none">+</span>
+            <marquee id="marquee" scrollamount="7">
+                <p>آدرس جدید سایت : mkv - dl.com </p>
+            </marquee>
+
+
+            <!--box search-->
+            <div class="search-box">
+                <form action="search.php" method="get">
+                    <input id="search-input" type="search" placeholder="نام فیلم و سریال را وارد کنید...">
+                    <input id="search-submit" type="submit" value="برو">
+                </form>
+            </div>
+            <!--end box search-->
+        </div>
+        <!--end navar zard rang search-->
+        <!--menu right-->
+        <div id="sidebar">
+            <!--menu daste bandi ha-->
+            <div class="sidebar-right">
+                <div class="sidebar-header">
+                    <div class="sidebar-imovie"></div>
+                    <a>دسته بندی ها</a>
+                </div>
+                <div class="sidebar-content-1">
+                    <ul>
+                        <li>
+                            <a class="title-sidebar">ژانر</a>
+                            <ul>
+                                <li><a href="../page/action.html">اکشن</a></li>
+                                <li><a href="../page/exciting.html">هیجانی</a></li>
+                                <li><a href="../page/scary.html">ترسناک</a></li>
+                                <li><a href="../page/comedy.html">کمدی</a></li>
+                                <li><a href="../page/drama.html">درام</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="title-sidebar">کیفیت</a>
+                            <ul>
+                                <li><a href="../page/action.html">Blu-Ray</a></li>
+                                <li><a href="../page/exciting.html">Web-Dl</a></li>
+                                <li><a href="../page/scary.html">HD-TV</a></li>
+                                <li><a href="../page/comedy.html">Web-rip</a></li>
+                                <li><a href="../page/drama.html">DVD-rip</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="title-sidebar">محصول کشور</a>
+                            <ul>
+                                <li><a href="../page/exciting.html">آمریکا</a></li>
+                                <li><a href="../page/scary.html">ایران</a></li>
+                                <li><a href="../page/comedy.html">هند</a></li>
+                                <li><a href="../page/drama.html">انگلیس</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a class="title-sidebar">سال انتشار</a>
+                            <ul>
+                                <li><a href="../page/exciting.html">2010</a></li>
+                                <li><a href="../page/scary.html">2011</a></li>
+                                <li><a href="../page/comedy.html">2012</a></li>
+                                <li><a href="../page/comedy.html">2013</a></li>
+                                <li><a href="../page/drama.html">2014</a></li>
+                                <li><a href="../page/exciting.html">2015</a></li>
+                                <li><a href="../page/action.html">2016</a></li>
+                                <li><a href="../page/drama.html">2017</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="title-sidebar">امتیاز</a>
+                            <ul>
+                                <li><a href="../page/action.html">10</a></li>
+                                <li><a href="../page/animation.html">9</a></li>
+                                <li><a href="../page/exciting.html">8</a></li>
+                                <li><a href="../page/drama.html">7</a></li>
+                                <li><a href="../page/scary.html">6</a></li>
+                                <li><a href="../page/comedy.html">5</a></li>
+                                <li><a href="../page/comedy.html">1 - 4</a></li>
+                            </ul>
+                        </li>
+                        <li class="title-sidebar"><a href="../page/action.html">فیلم های سه بعدی</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--menu film haye double-->
+            <div class="sidebar-right">
+                <div class="sidebar-header">
+                    <div class="sidebar-header">
+                        <div class="sidebar-imovie"></div>
+                        <a>فیلم های دوبله</a>
+                    </div>
+                </div>
+                <div class="sidebar-content-2">
+                    <a href="../page/action.html"> <img src="../img/gladiator.jpg" alt="gladiator"></a>
+                    <a href="../page/action.html"><img src="../img/terminator.jpg" alt="terminator2"></a>
+                    <a href="../page/drama.html"> <img src="../img/rebeca.jpg" alt="rebeca"></a>
+                    <a href="../page/animation.html"><img src="../img/naruto.jpg" alt="naruto"></a>
+                    <a href="../page/exciting.html"><img src="../img/life_of_louis_drax.jpg" alt="life_of_louis_drax"></a>
+                    <a href="../page/action.html"> <img src="../img/operation_chromite.jpg" alt="operation_chromite"></a>
+                </div>
+            </div>
+            <!--end menu film haye double-->
+            <!--menu trailer film-->
+            <div class="sidebar-right">
+                <div class="sidebar-header">
+                    <div class="sidebar-header">
+                        <div class="sidebar-imovie"></div>
+                        <a>تریلر فیلم</a>
+                    </div>
+                </div>
+                <div class="sidebar-content-2">
+                    <a href="../page/comedy.html"><img src="../img/street_cat_named_bob.jpg" alt="street_cat_named_bob"></a>
+                    <a href="../page/drama.html"> <img src="../img/love_basketball.jpg" alt="love_basketball"></a>
+                    <a href="../page/scary.html"> <img src="../img/dead_story.jpg" alt="dead_story"></a>
+                    <a href="../page/animation.html"><img src="../img/naruto.jpg" alt="naruto"></a>
+                    <a href="../page/action.html"><img src="../img/terminator.jpg" alt="terminator2"></a>
+                    <a href="../page/action.html"> <img src="../img/operation_chromite.jpg" alt="operation_chromite"></a>
+                </div>
+            </div>
+            <!--end menu trailer film-->
+            <!--menu social network-->
+            <div class="sidebar-right">
+                <div class="sidebar-header">
+                    <div class="sidebar-imovie"></div>
+                    <a>ما را دنبال کنید</a>
+                </div>
+                <div class="sidebar-content-3">
+                    <a href="https://www.instagram.com"><img src="../img/instagram.png" alt="اینستاگرام" title="ما را در اینستاگرام دنبال کنید"></a>
+                    <a href="https://plus.google.com"><img src="../img/google_plus.png" alt="گوگل پلاس" title="ما را در گوگل پلاس دنبال کنید"></a>
+                    <a href="https://www.facebook.com"><img src="../img/facebook.png" alt="فیس بوک" title="ما را در فیسبوک دنبال کنید"></a>
+                    <a href="https://twitter.com"><img src="../img/twitter.png" alt="توئیتر" title="ما را درتوئیتر دنبال کنید"></a>
+                </div>
+            </div>
+        </div>
+        <!--end side bar right-->
+        <!--slideshow-->
+        <div id="slideshow">
+
+            <div id="slider">
+                <ul>
+                    <li>
+                        <div class="body-slider">
+                            <img src="../img/gladiator.jpg" alt="gladiator">
+
+                            <div class="img-hover">
+                                <div class="imdb"></div>
+                                <p>8.5/10</p>
+                                <p>اکشن</p>
+                                <p>درام</p>
+                                <a href="../page/action.html">جزئیات</a>
+                            </div>
+                        </div>
+
+                        <div class="body-slider">
+                            <img src="../img/rebeca.jpg" alt="rebeca">
+
+                            <div class="img-hover">
+                                <div class="imdb"></div>
+                                <p>8.2/10</p>
+                                <p>درام</p>
+                                <p>راز آلود</p>
+                                <a href="../page/drama.html">جزئیات</a>
+                            </div>
+                        </div>
+                        <div class="body-slider">
+                            <img src="../img/naruto.jpg" alt="naruto">
+
+                            <div class="img-hover">
+                                <div class="imdb"></div>
+                                <p>8.6/10</p>
+                                <p>انیمه</p>
+                                <p>فانتزی</p>
+                                <a href="../page/animation.html">جزئیات</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="body-slider">
+                            <img src="../img/terminator.jpg" alt="terminator2">
+
+                            <div class="img-hover">
+                                <div class="imdb"></div>
+                                <p>8.5/10</p>
+                                <p>اکشن</p>
+                                <p>علمی تخیلی</p>
+                                <a href="../page/action.html">جزئیات</a>
+                            </div>
+                        </div>
+                        <div class="body-slider">
+                            <img src="../img/operation_chromite.jpg" alt="operation_chromite">
+
+                            <div class="img-hover">
+                                <div class="imdb"></div>
+                                <p>6.5/10</p>
+                                <p>اکشن</p>
+                                <p>تاریخی</p>
+                                <a href="../page/action.html">جزئیات</a>
+                            </div>
+                        </div>
+                        <div class="body-slider">
+                            <img src="../img/life_of_louis_drax.jpg" alt="life_of_louis_drax">
+
+                            <div class="img-hover">
+                                <div class="imdb"></div>
+                                <p>6.4/10</p>
+                                <p>هیجان انگیز</p>
+                                <p>راز آلود</p>
+                                <a href="../page/exciting.html">جزئیات</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="body-slider">
+                            <img src="../img/street_cat_named_bob.jpg" alt="street_cat_named_bob">
+
+                            <div class="img-hover">
+                                <div class="imdb"></div>
+                                <p>7.3/10</p>
+                                <p>کمدی</p>
+                                <p>خانوادگی</p>
+                                <a href="../page/comedy.html">جزئیات</a>
+                            </div>
+                        </div>
+                        <div class="body-slider">
+                            <img src="../img/dead_story.jpg" alt="dead_story">
+
+                            <div class="img-hover">
+                                <div class="imdb"></div>
+                                <p>-/10</p>
+                                <p>ترسناک</p>
+                                <p>معمایی</p>
+                                <a href="../page/scary.html">جزئیات</a>
+                            </div>
+                        </div>
+                        <div class="body-slider">
+                            <img src="../img/love_basketball.jpg" alt="love_basketball">
+
+                            <div class="img-hover">
+                                <div class="imdb"></div>
+                                <p>7.2/10</p>
+                                <p>ورزشی</p>
+                                <p>درام</p>
+                                <a href="../page/drama.html">جزئیات</a>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+
+        </div>
+
+        <!--end slideshow-->
+
+        <!--bakhsh post ha-->
+        <div class="content-body">
+            <!--header post-->
+            <div class="header-post">
+                <div class="icon_post"></div>
+                <h3>دانلود فیلم : street cat named bob </h3>
+            </div>
+            <hr>
+            <!--end header post-->
+            <!--mohtava post -->
+            <div class="content-post">
+                <h4>دانلود فیلم street cat named bob با لینک مستقیم</h4>
+                <img src="../img/street_cat_named_bob.jpg" alt="life_of_louis_drax" width="350px" height="450px">
+                <pre>
+                لینک :<a href="http://www.imdb.com/title/tt3606888/"> IMDB </a>              
+                ژانر : خانوادگی | کمدی
+                محصول : انگلستان 
+                زبان : انگلیسی
+                مدت زمان : 103 دقیقه
+                2016 :سال انتشار 
+                کیفیت : 1080p,720p
+               7.3/10
+                کارگردان : Roger Spottiswoode
+                بازیگران : Luke Treadaway, Bob, Bob the Cat, Luke Treadaway ,Ruta Gedmintas, Joanne Froggatt, Anthony Head
+            </pre>
+                <p>
+                    <span>خلاصه داستان : </span> این فیلم که بر اساس یکی از پرفروش‌ ترین کتاب های بین المللی ساخته شده، داستان آوازخوان دوره‌گرد "جیمز بون" را روایت میکند که پس از آشنا شدن با یک گربه ولگرد، زندگی اش اساساً تغییر میکند...
+                </p>
+                <a href="#">
+                    <div class="icon-download"></div>
+                </a>
+            </div>
+            <!--end mohtava post -->
+        </div>
+        <div class="clearfix"></div>
+        <!--safhe bandi-->
+        <div id="pagination">
+            <ul class="pagination">
+                <li><a class="active" href="../index.html">❮</a></li>
+                <li><a href="../index.html">1</a></li>
+                <li><a href="../index.html">2</a></li>
+                <li><a href="../index.html">3</a></li>
+                <li><a href="../index.html">4</a></li>
+                <li><a href="../index.html">5</a></li>
+                <li><a href="../index.html">6</a></li>
+                <li><a href="../index.html">7</a></li>
+                <li><a href="../index.html">8</a></li>
+                <li><a href="../index.html">9</a></li>
+                <li><a href="../index.html">10</a></li>
+                <li><a class="active" href="../index.html">❯</a></li>
+            </ul>
+        </div>
+        <!--end safhe bandi-->
+        <div class="clearfix"></div>
+        <footer>
+            <p>این وب سایت وابسته به هیچ گروه و ارگانی نبوده و هدف سایت تنها پیشرفت دید ایرانیان بر سینمای مدرن جهان است.</p>
+            <br>
+
+            <div id="google_map"></div>
+            <div class="clearfix"></div>
+            <p>All Rights Reserved <strong><a href="../index.html">mkv-dl.com</a></strong> © 2016</p>
+        </footer>
+    </div>
+
+
+    <script src="../js/jquery-3.1.1.min.js" type="text/javascript"></script>
+    <script src="../js/color-box.js" type="text/javascript"></script>
+    <script src="../js/form.js" type="text/javascript"></script>
+    <script src="../js/menu-sidebar.js" type="text/javascript"></script>
+    <script src="../js/slideshow.js" type="text/javascript"></script>
+    <script src="../js/googlemap.js" type="text/javascript" async defer></script>
+    <!--code haye java -->
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#slider").easySlider({
+                auto: true,
+                continuous: true,
+
+            });
+
+        });
+    </script>
+    <script type="text/javascript">
+        $(function() {
+            $('marquee').mouseover(function() {
+                $(this).attr('scrollamount', 0);
+            }).mouseout(function() {
+                $(this).attr('scrollamount', 5);
+            });
+
+        });
+
+        function fn1() {
+            document.getElementById("marquee").style.display = "none";
+            document.getElementById("aw-c").style.display = "none";
+            document.getElementById("aw-o").style.display = "block";
+        }
+
+        function fn2() {
+            document.getElementById("marquee").style.display = "block";
+            document.getElementById("aw-o").style.display = "none";
+            document.getElementById("aw-c").style.display = "block";
+
+        }
+    </script>
+    <!--
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVuyFabB56q-0SMaktN-I9m8QqixmKMkE&callback=initMap" async defer></script>-->
+
+</body>
+
+</html>
